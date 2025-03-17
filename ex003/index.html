@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Imagens</title>
+    <style>
+        
+      body {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        background-image: url(imagens/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right bottom;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+      h1, h2 {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.6em;
+        text-align: justify;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .img-logo {
+        width: 400px;
+        display: block;
+        margin: 10px auto;
+      }
+      .img-html, .img-css {
+        width: 150px;
+        padding-top: 5px;
+        transition: transform 0.3s ease;
+      }
+      .img-html:hover, .img-css:hover {
+        transform: scale(1.1);
+      }
+      .img-html {
+        float: left;
+        margin-right: 15px;
+      }
+      .img-css {
+        float: right;
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com imagens</h1>
+
+    <h2>Imagens vetoriais vs bitmap</h2>
+    <img src="imagens/logo_ser-frontend-ico.png" class="img-logo" alt="logo" />
+    <img src="imagens/logo_ser-frontend-ico.svg" class="img-logo" alt="logo" />
+
+    <h2>Imagens transparentes</h2>
+    <img src="imagens/logo_ser-frontend-ico-transparente.gif" class="img-logo" alt="" />
+    <img src="imagens/logo_ser-frontend-ico-transparente.png" class="img-logo" alt="" />
+
+    <h2>GIF animado</h2>
+    <img src="imagens/walk.gif" class="img-logo" alt="animação mulher andando" />
+
+    <h2>Float</h2>
+    <img src="imagens/html5.png" alt="logotipo HTML5" class="img-html" />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga esse
+      fugiat? Molestiae quaerat labore vitae, nam illum modi, eveniet nobis
+      assumenda sed facere iusto dolore reprehenderit ipsa esse enim.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      architecto hic quos quam non, fuga fugit beatae aperiam tempora maxime
+      repellat magni, reprehenderit doloremque mollitia at quibusdam possimus.
+    </p>
+    <img src="imagens/css3.png" alt="logotipo CSS3" class="img-css" />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga esse
+      fugiat? Molestiae quaerat labore vitae, nam illum modi, eveniet nobis
+      assumenda sed facere iusto dolore reprehenderit ipsa esse enim.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      architecto hic quos quam non, fuga fugit beatae aperiam tempora maxime
+      repellat magni, reprehenderit doloremque mollitia at quibusdam possimus.
+    </p>
+  </body>
+</html>
