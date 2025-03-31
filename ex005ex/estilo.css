@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* Resetando margens, paddings e garantindo que as medidas respeitem o tamanho dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    background: linear-gradient(120deg, #d4f1f4, #a8dadc); /* Degradê suave em tons de azul e verde */
+    font-family: 'Arial', sans-serif; /* Fonte padrão e simples para melhor leitura */
+    height: 100vh; /* Faz a altura ocupar a tela toda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Título principal */
+.main-title {
+    color: #2c3e50; /* Azul escuro para melhor contraste */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Efeito de sombra suave para destacar o texto */
+}
+
+/* Caixa que envolve a lista */
+.list-wrapper {
+    background: #f1fcfc; /* Branco levemente azulado para suavidade */
+    width: 90%;
+    max-width: 600px; /* Garante que a lista não fique muito grande */
+    max-height: 450px; /* Define altura máxima para permitir rolagem */
+    overflow-y: auto; /* Adiciona rolagem vertical caso necessário */
+    border-radius: 10px; /* Bordas arredondadas para um design moderno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o elemento */
+    padding: 10px;
+}
+
+/* Estilização da lista */
+.list {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+}
+
+/* Estilização dos itens da lista */
+.list-item {
+    display: flex;
+    border-bottom: 1px solid #cfe7e8; /* Linha divisória suave entre os itens */
+    padding: 16px;
+    gap: 20px; /* Espaçamento entre os elementos dentro do item */
+    align-items: center;
+    transition: background-color 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+
+/* Imagem do perfil do usuário */
+.list-item__imagem img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem fique bem ajustada */
+    border: 2px solid #80cbc4; /* Borda verde clara para um detalhe sutil */
+}
+
+/* Container dos textos (nome e e-mail) */
+.list-item__content {
+    padding: 0 15px;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço disponível */
+}
+
+/* Nome do usuário */
+.list-item__name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50; /* Azul escuro para bom contraste */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Pequena sombra para destacar o nome */
+}
+
+/* E-mail do usuário */
+.list-item__email {
+    font-size: 14px;
+    color: #5e8b92; /* Azul esverdeado mais discreto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Suave destaque para legibilidade */
+}
+
+/* Efeito ao passar o mouse sobre o item da lista */
+.list-item:hover {
+    background-color: #d1f0f0; /* Verde-água claro para efeito sutil */
+}
+
+/* Ícones de ação (como editar ou deletar) */
+.list-item__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out; /* Transição suave ao aparecer */
+}
+
+/* Exibir os ícones de ação ao passar o mouse sobre o item */
+.list-item:hover .list-item__action {
+    opacity: 1;
+}
