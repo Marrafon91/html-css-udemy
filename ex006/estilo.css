@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Resetando margens, paddings e garantindo que as medidas respeitem o tamanho dos elementos */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   */
+
+
+body {
+    background: linear-gradient(120deg, #d4f1f4, #a8dadc); 
+    font-family: 'Arial', sans-serif; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+       
+}
+
+.main-title {
+    color: #2c3e50; 
+    font-size: 28px;
+    margin: 50px auto;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /
+}
+
+.list {
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.list-item {
+    flex-basis: 280px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-image: url(imagens/thumb02.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.list-item__imagem img {
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 120px;
+}
+
+.list-item__name {
+    margin: 0;
+    font-size: 24px;
+    color: #3e8f92;
+}
+
+.list-item__action {
+    display: flex;
+    background-color: #e5e5e5;
+    padding: 16px;
+    justify-content: space-evenly;
+    gap: 16px;
+}
