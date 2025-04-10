@@ -8,6 +8,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
 }
 
 .contairner-dark {
@@ -16,8 +18,8 @@
 .header  {
    display: flex;
    justify-content: space-between;
-   padding: 20px 0;
    align-items: center;
+   padding: 20px 0;
    margin: 0 24px;
       
 }
@@ -27,14 +29,14 @@
     display: inline-block;
     margin: 10px 10px;
     outline: 1px solid #ffff00;
-    padding: 10px;
+    padding: 10px 0;
     text-transform: uppercase;
     list-style: none;
     cursor: pointer;
     }
 
 .header_nav ul li a {
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: #ffff00;
 }
@@ -67,12 +69,12 @@
 }
 
 .heroBanner h1 {
-    max-width: 50%;
     font-size: 3em;
+    margin: 24px;
 }
 
 .heroBanner img {
-    max-width: 50%; 
+    max-width: 60%; 
     height: auto; 
 }
 
@@ -84,7 +86,224 @@
 }
 
 .btn {
+    background-color: #f1ce07a1;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 28px;
+    margin: 0 16px;
+    max-width: 150px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+.btn:hover {
     background-color: #000;
+    transition:  .3s ease-in-out;
+    color: #ffff00;
 }
 
 
+
+.container-light {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cccccc21;
+}
+
+.container-light h2 {
+    text-align: center;
+    padding: 16px;
+    margin: 28px auto;
+}
+
+.cursosContainer {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.curso_card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 300px;
+    min-height: 420px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.curso_card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+
+.cursos .container .btn {
+    margin: 10px auto;    
+}
+
+.cursos_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    flex-grow: 1; 
+}
+
+
+.cursosContainer + .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; 
+    text-align: center;
+    padding: 15px 5px;
+    background-color: #ffff00;    
+}
+
+.cursosContainer + .btn:hover {
+    background-color: #000;    
+}
+
+.container-dark2 .container {
+    background-color: #022c54ee;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;     
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.container-dark2 .container h2 {
+    margin-bottom: 10px; 
+}
+
+.container-dark2 .container img {
+    max-width: 50%;
+    height: 450px;
+}
+
+#contatos {
+    background-color: #97abec21;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;    
+}
+
+#contatos iframe {
+    width: 100vw; 
+    max-width: 100%;
+    height: 525px;        
+}
+
+#contatos address {
+    text-align: center;
+}
+
+.contairner-dark-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000cc;
+    color: #fff;
+    padding: 24px;
+    
+}
+
+.contairner-dark-footer a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contairner-dark-footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.contairner-dark-footer a:visited {
+    color: #fff;
+}
+
+.contairner-dark-footer a:active {
+    color: #f52516af;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header_nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .heroBanner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .heroText {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .heroBanner img {
+        max-width: 80%;
+    }
+    
+    .curso_card {
+        width: 90%;
+    }
+    
+    .container-dark2 .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroBanner h1 {
+        font-size: 2em;
+    }
+    
+    .btn {
+        max-width: 100px;
+        padding: 8px;
+    }
+    
+    .container-dark2 .container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
