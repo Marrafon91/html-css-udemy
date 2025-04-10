@@ -9,3 +9,32 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.contairner-dark {
+    background-color: #000;
+}
+.header  {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0;
+   align-items: center;
+   margin: 0 24px;
+      
+}
+
+
+.header_nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+    border: 1px solid #ffff00;
+    padding: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #ffff00; 
+}
+
+.header_nav ul li a {
+    text-decoration: none;
+    color: #ffff00;
+}
