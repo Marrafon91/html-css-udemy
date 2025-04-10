@@ -26,15 +26,65 @@
 .header_nav ul li {
     display: inline-block;
     margin: 10px 10px;
-    border: 1px solid #ffff00;
+    outline: 1px solid #ffff00;
     padding: 10px;
     text-transform: uppercase;
     list-style: none;
     cursor: pointer;
-    text-shadow: 1px 1px 1px #ffff00; 
-}
+    }
 
 .header_nav ul li a {
+    padding: 20px;
     text-decoration: none;
     color: #ffff00;
 }
+
+
+.header_nav ul li:hover {
+    background-color: #ffff00;
+    color: #000;
+    transition:  .3s ease-in-out;
+      
+}
+
+.header_nav ul li a:hover {
+    color: #000;    
+}
+
+.first-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #ffff00, #fff);
+    
+}
+
+.heroBanner {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    
+}
+
+.heroBanner h1 {
+    max-width: 50%;
+    font-size: 3em;
+}
+
+.heroBanner img {
+    max-width: 50%; 
+    height: auto; 
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 50%;
+}
+
+.btn {
+    background-color: #000;
+}
+
+
