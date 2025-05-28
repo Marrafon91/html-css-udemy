@@ -23,9 +23,9 @@ body {
   flex-wrap: wrap;
   margin-top: 4em;
   max-width: 850px;
-  padding: 0.8em 0;
+  padding: .8em 0;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5);
-  gap: 0.35em;
+  gap: .35em;
   background-color: white;
 }
 
@@ -42,15 +42,15 @@ body {
   opacity: 1;
 }
 
-.image:hover img {
-  transform: scale(1.2);
-}
-
 .image img {
   width: 200px;
   flex-grow: 1;
   display: block;
   transition: transform 0.5s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.2);
 }
 
 .image p {
