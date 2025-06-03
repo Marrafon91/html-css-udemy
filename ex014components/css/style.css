@@ -57,6 +57,11 @@ p {
 article {
   padding: 1em 0;
 }
+
+section {
+  margin-bottom: 3rem;
+}
+
 .underline {
   text-decoration: red wavy underline;
 }
@@ -168,6 +173,17 @@ address p {
 .card_title {
     font-size: 1.75em;
     margin-bottom: .3em;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .row {
+    display: flex;
+    gap: 3rem;
+    padding: 1.5rem 0;
+    padding-top: 1.5rem;
   }
 
 kbd {
