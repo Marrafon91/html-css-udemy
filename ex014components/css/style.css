@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #121212; /*(cor de fundo clara e limpa) */
+    --textos: #fff; /*(preto intenso para textos ou detalhes)*/
+    --azul-principal: #007acc;/*(azul vibrante e moderno, ótimo para destaques e botões)*/
+    --azul-secundario: #5ab4f0;/*(um tom mais suave para contrastar com o azul principal)*/
+    --cinza-neutro: #e0e0e0;/*(para contornos, divisores ou fundos alternativos)*/
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: "Roboto Slab", serif;
+    background-color: var(--cinza-neutro);
+    color: var(--textos);
+}
+
+.main-header {
+ flex: 0 0 26rem;
+ background-color: var(--azul-principal);
+}
+
+.main {
+    background-color: var(--azul-secundario);
+    flex: 1 0;
+}
+
+a {
+    color: inherit;
+}
