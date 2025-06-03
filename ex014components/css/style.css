@@ -11,7 +11,7 @@
   --cor-de-fundo: #121212da; /*(cor de fundo clara e limpa) */
   --textos: #fff; /*(preto intenso para textos ou detalhes)*/
   --azul-principal: #007acc; /*(azul vibrante e moderno, ótimo para destaques e botões)*/
-  --azul-secundario: #5ab4f0; /*(um tom mais suave para contrastar com o azul principal)*/
+  --links: #0077b6; /*(um tom mais suave para contrastar com o azul principal)*/
   --cinza-neutro: #e0e0e0af; /*(para contornos, divisores ou fundos alternativos)*/
   --titulos: #b18cff;/*(contraste bacana com o fundo escuro.)*/
 }
@@ -33,6 +33,7 @@ body {
 
 h2, h3, h4, h5, h6 {
     color: var(--titulos);
+   
 }
 
 p {
@@ -43,9 +44,15 @@ p {
     margin-bottom: 1rem;
 }
 
+.highlight {
+    border-left: 1px solid var(--textos);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
+}
+
 article {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 1em 0;
 }
 .underline {
     text-decoration: red wavy underline;
@@ -128,7 +135,7 @@ address p {
     }
 
     & a:hover {
-    color: #0077b6; 
+    color: var(--links); 
       }
     
 }
