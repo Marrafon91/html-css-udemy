@@ -13,7 +13,7 @@
   --azul-principal: #007acc; /*(azul vibrante e moderno, ótimo para destaques e botões)*/
   --links: #0077b6; /*(um tom mais suave para contrastar com o azul principal)*/
   --cinza-neutro: #e0e0e0af; /*(para contornos, divisores ou fundos alternativos)*/
-  --titulos: #b18cff;/*(contraste bacana com o fundo escuro.)*/
+  --titulos: #b18cff; /*(contraste bacana com o fundo escuro.)*/
 }
 
 html {
@@ -31,37 +31,39 @@ body {
   line-height: 1.7;
 }
 
-h2, h3, h4, h5, h6 {
-    color: var(--titulos);
-   
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--titulos);
 }
 
 p {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .h2-space {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .highlight {
-    border-left: 1px solid var(--textos);
-    font-size: 1.1em;
-    padding-left: 2em;
-    margin-bottom: 2.2em;
+  border-left: 1px solid var(--textos);
+  font-size: 1.1em;
+  padding-left: 2em;
+  margin-bottom: 2.2em;
 }
 
 article {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 .underline {
-    text-decoration: red wavy underline;
+  text-decoration: red wavy underline;
 }
 
 .main-header {
   flex: 0 0 26rem;
   background-color: var(--titulos);
- 
 }
 
 .main {
@@ -69,11 +71,11 @@ article {
   flex: 1 0;
   padding: 6.5rem 6rem 7.5rem;
 
-   & .titulo {
-     font-size: 4.6rem;
-     color: var(--cinza-neutro);
-     text-transform: uppercase;
-     margin-top: 2rem;
+  & .titulo {
+    font-size: 4.6rem;
+    color: var(--cinza-neutro);
+    text-transform: uppercase;
+    margin-top: 2rem;
   }
 }
 
@@ -89,7 +91,9 @@ a {
 .perfil-img {
   /* max-width: 14rem; */
   border-radius: 3rem;
+
 }
+
 
 .main-nav {
   text-align: right;
@@ -97,11 +101,11 @@ a {
 
   & ul {
     list-style-type: none;
-  } 
+  }
 
   & ul li {
-    border-bottom: .1rem solid var(--textos);
-    padding: .4rem 0;
+    border-bottom: 0.1rem solid var(--textos);
+    padding: 0.4rem 0;
   }
 
   & ul a {
@@ -110,74 +114,80 @@ a {
     padding: 1.2rem 0;
     text-decoration: none;
     background-color: transparent;
-    transition: padding-right .2s, background-color .4s;
+    transition: padding-right 0.2s, background-color 0.4s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #9061f5;
+      outline: none;
       padding-right: 1rem;
-      
     }
   }
 }
 
 address p {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 1.5rem;
 
-    & a {        
+  & a {
     text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
     color: inherit;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    }
+  }
 
-    & a:hover {
-    color: var(--links); 
-      }
-    
+  & a:hover,
+  & a:focus {
+    background-color: var(--textos);
+    border-radius: 5px;
+    outline: none;
+    padding-right: 1rem;
+    color: var(--links);
+  }
 }
 
 kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 2px;
-    color: #333;
-    display: inline-block;
-    font-size: 1.3rem;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px;
+  color: #333;
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
 
 samp {
-    background-color: #ff0000;
-    border-radius: 3px;
-    border: 1px solid #ff0000;
-    color: #fff;
-    display: inline-block;
-    font-size: 1.3rem;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
+  background-color: #ff0000;
+  border-radius: 3px;
+  border: 1px solid #ff0000;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
 
 @media (max-width: 600px) {
   html {
-    font-size: 55%; 
+    font-size: 55%;
   }
 
   .main {
-    padding: 3rem 2rem; 
-    
+    padding: 3rem 2rem;
   }
 
   .main-header {
-    flex: 0 0 35%; 
-    text-align: center; 
+    flex: 0 0 35%;
+    text-align: center;
   }
 
   .main-nav {
@@ -194,15 +204,14 @@ samp {
     border-radius: 1rem;
   }
   address {
-    padding: 1rem;    
+    padding: 1rem;
   }
 
   .main .titulo {
-    font-size: 3rem; 
+    font-size: 3rem;
   }
 
   .perfil-img {
-    max-width: 10rem; 
+    max-width: 10rem;
   }
 }
-
