@@ -9,7 +9,7 @@
 
 :root {
   --cor-de-fundo: #121212da; /*(cor de fundo clara e limpa) */
-  --textos: #fff; /*(preto intenso para textos ou detalhes)*/
+  --textos: #fff; /*(branco intenso para textos ou detalhes)*/
   --azul-principal: #007acc; /*(azul vibrante e moderno, ótimo para destaques e botões)*/
   --links: #0077b6; /*(um tom mais suave para contrastar com o azul principal)*/
   --cinza-neutro: #e0e0e0af; /*(para contornos, divisores ou fundos alternativos)*/
@@ -138,7 +138,7 @@ address p {
     color: inherit;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
   }
 
   & a:hover,
@@ -150,6 +150,25 @@ address p {
     color: var(--links);
   }
 }
+
+.card {
+  max-width: 740px;
+  background-color: var(--cor-de-fundo);
+  padding: 0;  
+}
+
+.card_content {
+  padding: .5em 1em 1em;
+  
+  & p {
+    margin: 0;
+  }   
+}
+
+.card_title {
+    font-size: 1.75em;
+    margin-bottom: .3em;
+  }
 
 kbd {
   background-color: #eee;
@@ -203,6 +222,7 @@ samp {
     padding: 1rem;
     border-radius: 1rem;
   }
+  
   address {
     padding: 1rem;
   }
