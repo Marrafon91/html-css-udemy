@@ -8,11 +8,12 @@
 }
 
 :root {
-  --cor-de-fundo: #121212; /*(cor de fundo clara e limpa) */
+  --cor-de-fundo: #121212da; /*(cor de fundo clara e limpa) */
   --textos: #fff; /*(preto intenso para textos ou detalhes)*/
   --azul-principal: #007acc; /*(azul vibrante e moderno, ótimo para destaques e botões)*/
   --azul-secundario: #5ab4f0; /*(um tom mais suave para contrastar com o azul principal)*/
-  --cinza-neutro: #e0e0e0; /*(para contornos, divisores ou fundos alternativos)*/
+  --cinza-neutro: #e0e0e0af; /*(para contornos, divisores ou fundos alternativos)*/
+  --titulos: #b18cff;/*(contraste bacana com o fundo escuro.)*/
 }
 
 html {
@@ -27,16 +28,39 @@ body {
   font-family: "Roboto Slab", serif;
   background-color: var(--cinza-neutro);
   color: var(--textos);
+  line-height: 1.7;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--titulos);
+}
+
+.h2-space {
+    margin-bottom: 1rem;
+}
+
+article {
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .main-header {
   flex: 0 0 26rem;
-  background-color: var(--azul-principal);
+  background-color: var(--titulos);
+ 
 }
 
 .main {
-  background-color: var(--azul-secundario);
+  background-color: var(--cor-de-fundo);
   flex: 1 0;
+  padding: 6.5rem 6rem 7.5rem;
+
+   & .titulo {
+     font-size: 4.6rem;
+     color: var(--cinza-neutro);
+     text-transform: uppercase;
+     margin-top: 2rem;
+  }
 }
 
 a {
@@ -75,11 +99,48 @@ a {
     transition: padding-right .2s, background-color .4s;
 
     &:hover {
-      background-color: var(--azul-secundario);
+      background-color: #9061f5;
       padding-right: 1rem;
       
     }
   }
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 55%; /* Ajusta a base para tamanhos de fonte menores */
+  }
+
+  .main {
+    padding: 3rem 2rem; /* Reduz o padding lateral */
+    
+  }
+
+  .main-header {
+    flex: 0 0 35%; /* Faz o header ocupar toda a largura */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .main-nav {
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+
+  .main-nav ul li {
+    margin: 0 0.5rem;
+  }
+
+  .main-nav ul a {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .main .titulo {
+    font-size: 3rem; /* Tamanho menor para títulos em telas menores */
+  }
+
+  .perfil-img {
+    max-width: 10rem; /* Ajusta a imagem de perfil para caber na tela */
+  }
+}
 
