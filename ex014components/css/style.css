@@ -144,6 +144,7 @@ address p {
     display: flex;
     align-items: center;
     gap: .5rem;
+    background-color: transparent;
   }
 
   & a:hover,
@@ -153,6 +154,7 @@ address p {
     outline: none;
     padding-right: 1rem;
     color: var(--links);
+    transition: background-color 0.6s;
   }
 }
 
@@ -190,6 +192,58 @@ address p {
   .row > * {
     flex: 1 0 0%;
   }
+
+  .alternada {
+    list-style-type: none;
+    padding-left: 0;
+
+    & li {
+      padding: 0;
+    }
+    
+    & li:nth-child(1) {
+      border-bottom:  2px solid var(--titulos);
+      }
+
+    & li:nth-child(2) {
+      border-bottom:  2px solid var(--textos);
+      }
+
+    & li:nth-child(3) {
+      color: var(--cinza-neutro);
+      text-transform: uppercase;
+      }
+  }
+
+  .roman {
+    list-style-type: upper-roman;
+
+    &::before {
+      content: "➡️";
+    }
+
+    &::after {
+      content: "⭐";
+    }
+  }
+
+  .list-emoji {
+    list-style-type: "✔️";
+    letter-spacing: 1px;
+    
+    li &::after {
+      content: "😊";
+      margin-right: 0.5em;
+    }
+
+    li &::before {
+      content: "♦️";
+      margin-right: 0.5em;
+    }
+  }
+
+
+
 
 kbd {
   background-color: #eee;

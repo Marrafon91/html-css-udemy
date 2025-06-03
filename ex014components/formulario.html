@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+    <title>Projeto Meus Componentes</title>   
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img src="img/Guilherme.png" alt="Guilherme" class="perfil-img">
+            </a>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main class="main">
+        <h1 class="titulo">Meu Formulario</h1>
+
+        <section>
+            <h2>Entre em contato</h2>
+            <div class="row">
+                <form action="" method="get">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Email completo" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><b>Endereço</b> 1234 Somewhere Jd. Nashville, TN 00000 United States</p>
+                    <p><b>Telefone</b> 000-000-000</p>
+                    <p><b>Email</b> email@server.com </p>
+                </address>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>    
