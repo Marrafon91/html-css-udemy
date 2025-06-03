@@ -43,6 +43,9 @@ article {
     padding-top: 1px;
     padding-bottom: 1px;
 }
+.underline {
+    text-decoration: red wavy underline;
+}
 
 .main-header {
   flex: 0 0 26rem;
@@ -108,17 +111,17 @@ a {
 
 @media (max-width: 600px) {
   html {
-    font-size: 55%; /* Ajusta a base para tamanhos de fonte menores */
+    font-size: 55%; 
   }
 
   .main {
-    padding: 3rem 2rem; /* Reduz o padding lateral */
+    padding: 3rem 2rem; 
     
   }
 
   .main-header {
-    flex: 0 0 35%; /* Faz o header ocupar toda a largura */
-    text-align: center; /* Centraliza o conteúdo */
+    flex: 0 0 35%; 
+    text-align: center; 
   }
 
   .main-nav {
@@ -136,11 +139,11 @@ a {
   }
 
   .main .titulo {
-    font-size: 3rem; /* Tamanho menor para títulos em telas menores */
+    font-size: 3rem; 
   }
 
   .perfil-img {
-    max-width: 10rem; /* Ajusta a imagem de perfil para caber na tela */
+    max-width: 10rem; 
   }
 }
 
