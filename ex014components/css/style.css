@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
   box-sizing: border-box;
 }
@@ -181,9 +181,14 @@ address p {
 
   .row {
     display: flex;
+    justify-content: space-between;
     gap: 3rem;
     padding: 1.5rem 0;
     padding-top: 1.5rem;
+  }
+
+  .row > * {
+    flex: 1 0 0%;
   }
 
 kbd {
