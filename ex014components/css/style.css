@@ -35,6 +35,10 @@ h2, h3, h4, h5, h6 {
     color: var(--titulos);
 }
 
+p {
+    padding-bottom: 1rem;
+}
+
 .h2-space {
     margin-bottom: 1rem;
 }
@@ -107,6 +111,19 @@ a {
       
     }
   }
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 2px;
+    color: #333;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
 }
 
 @media (max-width: 600px) {
