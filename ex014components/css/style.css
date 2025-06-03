@@ -277,8 +277,10 @@ select {
   width: 100%;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   width: auto;
+  
 }
 
 input, textarea, select {
@@ -291,18 +293,18 @@ input, textarea, select {
 
  
 .btn {
-  align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #ffffff;
+  color: var(--textos);
   display: flex;
   font-size: 1.8rem;
   justify-content: center;
+  align-items: center;
   line-height: 1em;
-  width: 100%;
+  margin: 0 auto;
+  width: 40%;
   padding: .7rem;
   text-decoration: none;
   cursor: pointer;
@@ -329,6 +331,10 @@ input, textarea, select {
 
 .btn:active {
   transform: scale(0.9);
+}
+
+ .form-quiz {
+  text-align: center;
 }
 
 
@@ -370,5 +376,9 @@ input, textarea, select {
 
   .perfil-img {
     max-width: 10rem;
+  }
+
+  .btn {
+    margin: 0;
   }
 }

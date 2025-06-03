@@ -53,21 +53,14 @@
                     <span class="text">Enviar</span>
                     </button>
 
-                </form>
-
-                <address>
-                    <p><b>Endereço</b> 1234 Somewhere Jd. Nashville, TN 00000 United States</p>
-                    <p><b>Telefone</b> 000-000-000</p>
-                    <p><b>Email</b> email@server.com </p>
-                </address>
-
+                </form>  
             </div>
         </section>
 
         <section>
             <h2>Quiz</h2>
-
-            <form action="" method="get">
+            
+            <form action="" method="get" class="form-quiz">
                 <label for="tecnologia">Qual é sua linguagem Preferida ?</label>
                 <select name="tecnologia" id="tecnologia">
                     <option value="null">Selecione</option>
@@ -75,6 +68,18 @@
                     <option value="css">CSS</option>
                     <option value="javascript">JavaScript</option>
                 </select>
+
+                <label>Baixa prioridade <input type="radio" name="prioridade" value="baixa"></label>
+                <label>Média prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Alta prioridade <input type="radio" name="prioridade" value="alta"></label>
+                <hr>
+                <label><input type="checkbox" name="copy" value="true">  Envie-me uma cópia</label>
+                <label><input type="checkbox" name="humano" value="true">  Sou um humano</label>
+
+                <div class="row">
+                    <input type="submit" value="Enviar" class="btn">
+                    <input type="reset" value="Limpar" class="btn">
+                </div>
             </form>
         </section>
 
