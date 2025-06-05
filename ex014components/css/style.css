@@ -404,7 +404,7 @@ select {
   }
 
   .main-header {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     text-align: center;
   }
 
@@ -421,7 +421,7 @@ select {
 
 @media (max-width: 600px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   .main {
@@ -433,7 +433,7 @@ select {
   }
 
   .main-header {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     text-align: center;
     padding: 2rem 1rem;
     
@@ -442,7 +442,7 @@ select {
   .main-nav {
     padding: 3rem 1rem;
     text-align: center;
-    
+        
   }
 
   .main-nav ul li {
