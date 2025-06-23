@@ -1,0 +1,27 @@
+@media screen and (min-width: 48.75em) {
+    .top_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top_header_logo {
+        margin-left: 1.5em;
+    }
+
+    .top_header_nav {
+        background-color: initial;
+    }
+
+    .top_header_nav li {
+        display: inline-block;
+    }
+
+    .top_header_nav a {
+        color: var(--cor-primaria);
+    }
+
+    .top_header_nav a:hover {
+       background-color: color-mix(in srgb, var(--cor-primaria), white 80%);
+       
+    }
+}
