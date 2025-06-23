@@ -10,6 +10,7 @@
 
 :root {
   --cor-primaria: #612674;
+  --default-gap: 1rem;
 }
 
 html {
@@ -132,7 +133,7 @@ h4 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--default-gap);
 }
 
 .col {
