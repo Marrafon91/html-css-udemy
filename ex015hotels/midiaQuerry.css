@@ -31,7 +31,19 @@
 
   .mainContent .row {
    row-gap: .5em;
+  }
+
+  .heroBanner_btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s ease-in-out;
 }
+
+ /* .top_header {
+  text-align: center;
+  position: sticky;
+  top: 0;  
+ } */
+  
 }
 
 /* Medium */

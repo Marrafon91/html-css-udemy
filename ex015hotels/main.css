@@ -35,11 +35,12 @@ h4 {
 }
 
 .top_header {
-  text-align: center;
+  text-align: center;  
 }
 
 .top_header_nav {
   background-color: var(--cor-primaria);
+  
 }
 
 .top_header_nav ul {
@@ -186,5 +187,16 @@ h4 {
     color: #83969f;
     text-align: center;
     padding: 2em;
+}
+
+.footer_a {
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.footer_a:hover {
+    text-decoration: underline;
 }
 
