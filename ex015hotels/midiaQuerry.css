@@ -39,6 +39,11 @@
     .heroBanner_subtitle {
         color: white;
     }
+
+    .col-md-6 {
+        width: calc(50% - 1rem);
+    }
+    
 }
 /* Large */
 @media screen and (min-width: 56.25em) {
@@ -81,6 +86,10 @@
     .heroBanner_subtitle {
         color: white;
         text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+    }
+
+    .col-xl-3 {
+        width: calc(25% - 1rem);
     }
 }
 

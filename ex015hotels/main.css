@@ -95,3 +95,51 @@ h4 {
     border-radius: .5em;
     margin: 2em auto;
 }
+
+.heroBanner_btn:hover {
+    background-color: rgba(88, 196, 196, 0.8);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.middleContent {
+ background-color: #f6f6f6;
+ text-align: center;
+ padding: 2em;
+ 
+}
+
+.middleContent a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.middleContent_title {
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.middleContent span[class^="icon-"] {
+    color: var(--cor-primaria);
+    font-size: 3.5em;
+}
+
+.middleContent p {
+    line-height: 1.5;
+    /* padding: 1em; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
