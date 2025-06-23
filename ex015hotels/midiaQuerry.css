@@ -21,7 +21,65 @@
     }
 
     .top_header_nav a:hover {
-       background-color: color-mix(in srgb, var(--cor-primaria), white 80%);
-       
+       background-color: color-mix(in srgb, var(--cor-primaria), white 80%);       
+    }
+
+    .heroBanner {
+        background-color: var(--cor-primaria);
+        color: white;
+    }
+
+    .heroBanner_iconPlay {
+        display: block;
+        margin: auto;
+    }
+
+    .heroBanner_title,
+    .heroBanner_subtitle {
+        color: white;
     }
 }
+
+@media screen and (min-width: 56.25em) {
+    .heroBanner {
+        background-image: url(images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth {
+        margin: initial;
+        margin-bottom: 4em;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 74em) {
+    .heroBanner {
+        background-image: url(images/bg_topo_1600x1374.jpg);
+        background-blend-mode: soft-light;
+        background-position: center top;
+        background-color: var(--cor-primaria);
+        background-repeat: no-repeat;
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .heroBanner .maxWidth {
+        width: 50%;
+    }
+
+    .heroBanner_iconPlay {
+        height: 7em;
+        width: 7em;
+    }
+
+    .heroBanner_title,
+    .heroBanner_subtitle {
+        color: white;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+    }
+}
+

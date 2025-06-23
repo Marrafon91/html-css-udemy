@@ -73,3 +73,25 @@ h4 {
 .heroBanner_iconPlay_img {
   width: 100%;
 }
+
+.heroBanner_title {
+    color: var(--cor-primaria);
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+.heroBanner_subtitle {
+    font-size: 1em;
+    color: color-mix(in srgb, var(--cor-primaria), white 50%);
+    line-height: 1.5;
+}
+
+.heroBanner_btn {
+    display: inline-block;
+    padding: .9em 2em;
+    background-color: #58c4c4;
+    text-decoration: none;
+    color: white;
+    border-radius: .5em;
+    margin: 2em auto;
+}
