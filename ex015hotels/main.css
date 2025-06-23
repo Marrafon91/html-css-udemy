@@ -147,6 +147,7 @@ h4 {
 
 .mainContent {
     padding: 2em;
+    background-color: #f6f6f6;
 }
 
 .mainContent p {
@@ -154,8 +155,18 @@ h4 {
 }
 
 .mainContent_img {
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.mainContent_img img {
+    max-height: 16.5em;    
+}
+
+
+.mainContent_container {
+  display: block;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .mainContent_title {
@@ -163,10 +174,17 @@ h4 {
     color: var(--cor-primaria);
     font-weight: normal;
     letter-spacing: .2em;
-    font-size: 1.25em;
-    
+    font-size: 1.25em;    
 }
 
 .mainContent .row {
    row-gap: 4em;
 }
+
+.footer {
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding: 2em;
+}
+

@@ -1,100 +1,133 @@
+/* Small */
+@media screen and (min-width: 31.25em) {
+  .mainContent_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--default-gap);
+  }
+
+  .mainContent_title {
+    margin-top: 0;
+  }
+
+  .mainContent_img {
+    flex: 0 0 20em;
+  }
+
+  .mainContent_img img {
+    width: 100%;
+    border-radius: 0.8em;
+  }
+
+  .mainContent_text {
+    flex: 1;
+  }
+
+  .mainContent p {
+    line-height: 1.2;
+    padding: 1em 0;
+  }
+
+  .mainContent .row {
+   row-gap: .5em;
+}
+}
+
 /* Medium */
 @media screen and (min-width: 48.75em) {
-    .top_header {
-        display: flex;
-        justify-content: space-between;
-    }
+  .top_header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .top_header_logo {
-        margin-left: 1.5em;
-    }
+  .top_header_logo {
+    margin-left: 1.5em;
+  }
 
-    .top_header_nav {
-        background-color: initial;
-    }
+  .top_header_nav {
+    background-color: initial;
+  }
 
-    .top_header_nav li {
-        display: inline-block;
-    }
+  .top_header_nav li {
+    display: inline-block;
+  }
 
-    .top_header_nav a {
-        color: var(--cor-primaria);
-    }
+  .top_header_nav a {
+    color: var(--cor-primaria);
+  }
 
-    .top_header_nav a:hover {
-       background-color: color-mix(in srgb, var(--cor-primaria), white 80%);       
-    }
+  .top_header_nav a:hover {
+    background-color: color-mix(in srgb, var(--cor-primaria), white 80%);
+  }
 
-    .heroBanner {
-        background-color: var(--cor-primaria);
-        color: white;
-    }
+  .heroBanner {
+    background-color: var(--cor-primaria);
+    color: white;
+  }
 
-    .heroBanner_iconPlay {
-        display: block;
-        margin: auto;
-    }
+  .heroBanner_iconPlay {
+    display: block;
+    margin: auto;
+  }
 
-    .heroBanner_title,
-    .heroBanner_subtitle {
-        color: white;
-    }
+  .heroBanner_title,
+  .heroBanner_subtitle {
+    color: white;
+  }
 
-    .col-md-6 {
-         width: calc(50% - var(--default-gap)); 
-    }
+  .col-md-6 {
+    width: calc(50% - var(--default-gap));
+  }
 
-    .col-xl-6 {
-        width: calc(50% - var(--default-gap));
-        
-    }
-    
+  .col-xl-6 {
+    width: calc(50% - var(--default-gap));
+  }
 }
 /* Large */
 @media screen and (min-width: 56.25em) {
-    .heroBanner {
-        background-image: url(images/bg_topo_1198x670.jpg);
-        aspect-ratio: 1198 / 670;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .heroBanner {
+    background-image: url(images/bg_topo_1198x670.jpg);
+    aspect-ratio: 1198 / 670;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .heroBanner .maxWidth {
-        margin: initial;
-        margin-bottom: 4em;
-        width: 75%;
-    }
+  .heroBanner .maxWidth {
+    margin: initial;
+    margin-bottom: 4em;
+    width: 75%;
+  }
 }
 /* Extra Large */
 @media screen and (min-width: 74em) {
-    .heroBanner {
-        background-image: url(images/bg_topo_1600x1374.jpg);
-        background-blend-mode: soft-light;
-        background-position: center top;
-        background-color: var(--cor-primaria);
-        background-repeat: no-repeat;
-        max-height: 80vh;
-        width: 100%;
-    }
+  .heroBanner {
+    background-image: url(images/bg_topo_1600x1374.jpg);
+    background-blend-mode: soft-light;
+    background-position: center top;
+    background-color: var(--cor-primaria);
+    background-repeat: no-repeat;
+    max-height: 80vh;
+    width: 100%;
+  }
 
-    .heroBanner .maxWidth {
-        width: 50%;
-    }
+  .heroBanner .maxWidth {
+    width: 50%;
+  }
 
-    .heroBanner_iconPlay {
-        height: 7em;
-        width: 7em;
-    }
+  .heroBanner_iconPlay {
+    height: 7em;
+    width: 7em;
+  }
 
-    .heroBanner_title,
-    .heroBanner_subtitle {
-        color: white;
-        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
-    }
+  .heroBanner_title,
+  .heroBanner_subtitle {
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+  }
 
-    .col-xl-3 {
-        width: calc(25% - var(--default-gap));
-    }
+  .col-xl-3 {
+    width: calc(25% - var(--default-gap));
+  }
 }
-
