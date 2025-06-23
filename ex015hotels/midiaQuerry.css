@@ -1,3 +1,4 @@
+/* Medium */
 @media screen and (min-width: 48.75em) {
     .top_header {
         display: flex;
@@ -39,7 +40,7 @@
         color: white;
     }
 }
-
+/* Large */
 @media screen and (min-width: 56.25em) {
     .heroBanner {
         background-image: url(images/bg_topo_1198x670.jpg);
@@ -55,7 +56,7 @@
         width: 75%;
     }
 }
-
+/* Extra Large */
 @media screen and (min-width: 74em) {
     .heroBanner {
         background-image: url(images/bg_topo_1600x1374.jpg);
