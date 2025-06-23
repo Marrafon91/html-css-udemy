@@ -43,6 +43,11 @@
     .col-md-6 {
          width: calc(50% - var(--default-gap)); 
     }
+
+    .col-xl-6 {
+        width: calc(50% - var(--default-gap));
+        
+    }
     
 }
 /* Large */

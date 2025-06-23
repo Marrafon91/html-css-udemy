@@ -144,3 +144,29 @@ h4 {
 .col-sm-12 {
     width: 100%;
 }
+
+.mainContent {
+    padding: 2em;
+}
+
+.mainContent p {
+    line-height: 1.2;
+}
+
+.mainContent_img {
+    width: 100%;
+    
+}
+
+.mainContent_title {
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    font-weight: normal;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+    
+}
+
+.mainContent .row {
+   row-gap: 4em;
+}
