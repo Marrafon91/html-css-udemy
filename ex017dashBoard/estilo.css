@@ -74,6 +74,11 @@ img {
     color: #5a5a5f;
 }
 
+.mainNav_menu svg,
+.topnav_menu svg {
+    vertical-align: bottom;
+}
+
 .mainNav_menus {
     display: flex;
     flex-direction: column;
@@ -94,10 +99,14 @@ img {
 .perfil {
     margin-right: var(--padding-padrao);
     display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .perfil_thumb {
-    height: 3.75rem;
+    height: 100%;
+    padding: .2rem 0;
+    margin-right: calc(var(--padding-padrao) / 2);
 }
 
 .perfil_thumb img {
