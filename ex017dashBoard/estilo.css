@@ -6,6 +6,8 @@
     --cor-primaria: #004eda;
     --cor-de-fundo: #f2f2f8;
     --padding-padrao: 2rem;
+    --preto-padrao: #111;
+    --cor-do-texto: #5a5a5f;
 }
 
 * {
@@ -16,6 +18,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    color: var(--cor-do-texto);
     display: grid;
     grid-template-columns: 15rem 1fr;
     grid-template-rows: 4rem auto;
@@ -24,7 +27,7 @@ body {
 .mainNav {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
-    background-color: #ccc;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +35,10 @@ body {
 .topnav {
     grid-row: 1 / 2;
     grid-column: 2 / -1;
-    background-color: #ddd;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-content {
@@ -49,7 +55,7 @@ img {
     padding-left: var(--padding-padrao);
     padding-top: var(--padding-padrao);
     display: inline-block;
-    color: #111;
+    color: var(--preto-padrao);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -78,5 +84,36 @@ img {
 
 .mainNav_menu:last-child{
     padding-bottom: var(--padding-padrao);
+}
+
+.topnav_menu {
+    display: flex;
+    gap: var(--padding-padrao);
+}
+
+.perfil {
+    margin-right: var(--padding-padrao);
+    display: flex;
+}
+
+.perfil_thumb {
+    height: 3.75rem;
+}
+
+.perfil_thumb img {
+    height: 100%;
+}
+
+.perfil_nome {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--preto-padrao);
+}
+
+.perfil_exp {
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--cor-do-texto), transparent 60%);
 }
 
