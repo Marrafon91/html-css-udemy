@@ -5,6 +5,7 @@
 :root {
     --cor-primaria: #004eda;
     --cor-de-fundo: #f2f2f8;
+    --padding-padrao: 2rem;
 }
 
 * {
@@ -16,14 +17,16 @@
 body {
     font-family: "Poppins", sans-serif;
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 64px auto;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 4rem auto;
 }
 
 .mainNav {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
     background-color: #ccc;
+    display: flex;
+    flex-direction: column;
 }
 
 .topnav {
@@ -41,3 +44,39 @@ body {
 img {
     max-width: 100%;
 }
+
+.mainNav_linkLogo {
+    padding-left: var(--padding-padrao);
+    padding-top: var(--padding-padrao);
+    display: inline-block;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.mainNav_menu,
+.topnav_menu {
+    list-style-type: none;
+    padding-left: var(--padding-padrao);
+}
+
+.mainNav_menu a,
+.topnav_menu a {
+    text-decoration: none;
+    color: #5a5a5f;
+}
+
+.mainNav_menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: var(--padding-padrao);
+}
+
+.mainNav_menu:last-child{
+    padding-bottom: var(--padding-padrao);
+}
+
