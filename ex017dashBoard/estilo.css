@@ -21,8 +21,8 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--cor-do-texto);
     display: grid;
-    grid-template-columns: 15rem 1fr;
-    grid-template-rows: 4rem auto;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 4rem minmax( calc(100vh - 4rem), auto);
 }
 
 .mainNav {
@@ -31,6 +31,10 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    padding-right: var(--padding-padrao);
 }
 
 .topnav {
@@ -76,6 +80,10 @@ img {
     font-weight: 700;
 }
 
+.mainNav_linkLogo:hover {
+    color: var(--cor-primaria);
+}
+
 .mainNav_menu,
 .topnav_menu {
     list-style-type: none;
@@ -85,7 +93,12 @@ img {
 .mainNav_menu a,
 .topnav_menu a {
     text-decoration: none;
-    color: #5a5a5f;
+    color: #5a5a5f;       
+}
+
+.mainNav_menu a:hover,
+.topnav_menu a:hover {
+    color: var(--cor-primaria);
 }
 
 .mainNav_menu svg,
@@ -99,6 +112,12 @@ img {
     justify-content: space-between;
     flex-grow: 1;
     padding-top: var(--padding-padrao);
+}
+
+.mainNav_menu li {
+    margin-top: 1rem;
+    border-bottom: 1.5px solid var(--cor-do-texto);
+    padding: 6px 0;
 }
 
 .mainNav_menu:last-child{
@@ -168,19 +187,28 @@ img {
     margin-left: var(--padding-metade);
 }
 
+.summary_description {
+    font-style: italic;
+    font-weight: 600;
+}
+
 .btn {
     background-color: var(--cor-primaria);
     color: #fff;
     text-decoration: none;
     border-radius: .6rem;
-    box-shadow: .1rem .1rem .6rem rgba(0, 0, 0, 0.4);
     padding: calc(var(--padding-metade) / 2) var(--padding-metade);
+}
+
+.btn:hover {
+   background-color: #004eda;
+   box-shadow: .1rem .1rem .6rem rgba(0, 0, 0, 0.4);
+   outline: 2px solid white;
 }
 
 .summary .btn {
     align-self: stretch;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 
