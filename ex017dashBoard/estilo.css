@@ -33,8 +33,7 @@ body {
     flex-direction: column;
     max-height: 100vh;
     position: sticky;
-    top: 0;
-    padding-right: var(--padding-padrao);
+    top: 0;    
 }
 
 .topnav {
@@ -70,18 +69,22 @@ img {
 }
 
 .mainNav_linkLogo {
-    padding-left: var(--padding-padrao);
-    padding-top: var(--padding-padrao);
+    padding: var(--padding-padrao);
     display: inline-block;
-    color: var(--preto-padrao);
+    color: #fff;
+    border-right: 1px solid var(--cor-do-texto);
+    border-bottom: 1px solid var(--cor-do-texto);
+    background-color: var(--cor-primaria);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+
 .mainNav_linkLogo:hover {
-    color: var(--cor-primaria);
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
 }
 
 .mainNav_menu,
@@ -106,6 +109,10 @@ img {
     vertical-align: bottom;
 }
 
+.mainNav_menu {
+    padding-right: var(--padding-padrao);
+}
+
 .mainNav_menus {
     display: flex;
     flex-direction: column;
@@ -122,6 +129,12 @@ img {
 
 .mainNav_menu:last-child{
     padding-bottom: var(--padding-padrao);
+}
+
+.mainNav_menu:not(:last-child) {
+    padding-bottom: var(--padding-padrao);
+    border-bottom: 1px solid var(--cor-do-texto);
+
 }
 
 .topnav_menu {
