@@ -1,0 +1,23 @@
+@media screen and (min-width: 46.25em) {
+       .row > .md-3 {
+        grid-column: span 3;
+    }
+    .row > .md-4 {
+        grid-column: span 4;
+    }
+    .row > .md-9 {
+        grid-column: span 9;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .row > .lg-3 {
+        grid-column: span 3;
+    }
+    .row > .lg-4 {
+        grid-column: span 4;
+    }
+    .row > .lg-6 {
+        grid-column: span 6;
+    }
+}
