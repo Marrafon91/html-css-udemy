@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Cat</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: linear-gradient(-120deg, #ccc, #000);
+      }
+      .cat {
+        width: 400px;
+        height: 200px;
+        background-image: url(cat/walking_sprite.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+        animation: andar 1s steps(12) infinite;
+      }
+
+      .bg {
+        animation: fundo 8s infinite alternate-reverse;
+      }
+
+      @keyframes fundo {
+        0% {
+          background-image: linear-gradient(60deg, #fff, #000);
+        }
+        25% {
+          background-image: linear-gradient(120deg, #000, #fff);
+        }
+        50% {
+          background-image: linear-gradient(180deg, #fff, #000);
+        }
+        75% {
+          background-image: linear-gradient(240deg, #000, #fff);
+        }
+        100% {
+          background-image: linear-gradient(300deg, #fff, #000);
+        }
+      }
+
+      @keyframes andar {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 -2390px;
+        }
+      }
+
+      .sun {
+        background-color: yellow;
+        border-radius: 50%;
+        height: 200px;
+        aspect-ratio: 1 / 1;
+        animation: 4s linear 0s infinite alternate rise,
+          4s linear 0s infinite alternate bounce;
+      }
+
+      @keyframes rise {
+        from {
+          transform: translateY(110vh);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        from {
+          transform: translateX(-50vw);
+        }
+        to {
+          transform: translateX(2vw);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="sun"></div>
+    <div class="cat"></div>
+  </body>
+</html>
