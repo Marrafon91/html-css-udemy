@@ -93,7 +93,7 @@
         background-image: url("cat/walking_sprite.png");
         background-position: 0 0;
         background-repeat: no-repeat;
-        animation: andar 1s steps(12) infinite, caminhar 8s linear infinite;
+        animation: andar 1s steps(12) infinite, caminhar 7s linear infinite;
         position: absolute;
         bottom: 80px;
         z-index: 3;
@@ -126,8 +126,8 @@
         position: absolute;
         bottom: 80px;
         right: -150px;
-        animation: bounce 5s linear infinite alternate,
-          quicar 1s ease-in-out infinite;
+        animation: bola ease-in-out 7s infinite,
+        quicar 1s ease-in-out infinite;
         box-shadow: inset -10px -10px 0 #aa4400;
         z-index: 2;
       }
@@ -155,12 +155,13 @@
         transform: translateY(-50%);
       }
 
-      @keyframes bounce {
-        from {
-          right: -100px;
+      @keyframes bola {
+        0% {
+          right: 150px;                    
         }
-        to {
+        100% {
           right: 100%;
+                    
         }
       }
 
@@ -173,6 +174,8 @@
           transform: translateY(-320px);
         }
       }
+
+      
     </style>
   </head>
   <body>
