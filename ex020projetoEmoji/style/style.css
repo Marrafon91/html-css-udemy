@@ -7,5 +7,70 @@
 }
 
 body {
+    font-family: "Montserrat", "sans-serif";
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-image: radial-gradient(ellipse at 0 0, #fff8ce, #ffb61d);
+}
 
+#wrapper {
+    width: 90%;
+    max-width: 83.75rem;
+    margin: auto;
+}
+
+.header_wrapper {
+    padding: 3.125rem 0;
+}
+
+.title_wrapper {
+    font-size: 4.125rem;
+}
+
+.title_wrapper strong {
+   text-transform: uppercase; 
+   color: brown;
+}
+
+.main_content {
+ display: flex;
+ gap: 2rem;
+}
+
+main > * {
+    flex: 1 0 0;
+
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form_content {
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.form_content input {
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #28293e;
+    outline: none;
+}
+
+.form_content input[type="submit"] {
+    background-color: #031d44;
+    color: white;
+}
+
+.form_content input[type="text"] {
+    background-color: transparent;
 }
