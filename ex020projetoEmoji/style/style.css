@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -48,8 +48,8 @@ main > * {
 
 p {
     font-weight: 300;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    /* margin-top: 2rem;
+    margin-bottom: 1rem; */
 }
 
 .form_content {
@@ -74,3 +74,65 @@ p {
 .form_content input[type="text"] {
     background-color: transparent;
 }
+
+.form_content input[type="text"]::placeholder {
+    color: #28293e;
+}
+
+.animation {
+    position: relative;
+}
+
+.animation img {
+    position: absolute;
+}
+
+.animation img:nth-child(1) {
+    left: 10px;
+    top: 150px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(2) {
+    right: 10px;
+    top: 20px;
+    animation: topleft 3s .5s infinite alternate;
+}
+
+.animation img:nth-child(3) {
+    right: 0;
+    top: 0;
+    animation: topleft 3.5s .5s infinite alternate;
+}
+
+.animation img:nth-child(4) {
+    left: 100px;
+    bottom: -100px;
+    animation: topleft 1.5s .5s infinite alternate;
+}
+
+.animation img:nth-child(5) {
+    left: 100px;
+    top: -100px;
+    animation: topleft 3s infinite alternate;
+}
+
+.animation img:nth-child(6) {
+    right: 30px;
+    bottom: -100px;
+    animation: topleft 2.5s infinite alternate;
+}
+
+
+@keyframes topleft {
+    from {
+        transform: translate(0,0);
+    }
+
+    to {
+        transform: translate(-10px, -30px);
+    }
+
+    
+}
+
